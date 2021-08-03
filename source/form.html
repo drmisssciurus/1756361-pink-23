@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/pink-mobile.svg" width="74" height="23" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-form">
+      <section class="page-form__item form">
+        <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="page-form__item--intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="form__surname">
+            <label for="form__surname">ФАМИЛИЯ:</label>
+            <input id="form__surname" type="text" name="" placeholder="Укажите фамилию *">
+          </p>
+          <p class="form__name">
+            <label for="form__name">ИМЯ:</label>
+            <input id="form__name" type="text" name="" placeholder="Введите ваше имя *">
+          </p>
+          <p class="form__patronymic">
+            <label for="form__patronymic">ОТЧЕСТВО:</label>
+            <input id="form__patronymic" type="text" name="" placeholder="Ну и отчество тоже">
+          </p>
+        </form>
+      </section>
+      <section class="page-form__filter">
+        <h2>Ваши безбашенные достижения в путешествии</h2>
+        <form class="page-form__filter filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter__fieldset">
+            <ul>
+              <li class="filter__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="shark" id="shark" checked>
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="ffilter__checkbox checkbox">
+                <input class="fcheckbox__input" type="checkbox" name="coast" id="coast" checked>
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="coast">Обгорел на пляже</label>
+              </li>
+              <li class="filter__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="Chuck-Norris" id="Chuck-Norris" >
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="Chuck-Norris">Видел Чака Норриса</label>
+              </li>
+              <li class="filter__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="souvenir" id="souvenir" >
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="filter__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="tower" id="tower" checked>
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="tower">Удержал башню</label>
+              </li>
+              <li class="filter__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="hotel" id="hotel" >
+                <span class="checkbox__icon"></span>
+                <label class="checkbox__label" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+      <section class="page-form__placeholder">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="page-form__inform">
+            <label for="page-form__number">НОМЕР ТЕЛЕФОНА</label>
+            <input id="page-form__number" type="text" name="" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="page-form__inform">
+            <label for="page-form__adress">АДРЕС ПОЧТЫ</label>
+            <input id="page-form__adress" type="text" name="" placeholder="Введите почту *">
+          </p>
+        </form>
+      </section>
+      <section class="page-form__question">
+        <h2>С каким приложением путешествовали?</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+            <input type="radio" name="Pink для iOS" value="Pink для iOS" checked> Pink для iOS
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="Pink на Android" value="Pink на Android"> Pink на Android
+          </label>
+          <br><label>
+            <input type="radio" name="Windows Phone" value="Windows Phone"> Windows Phone
+          </label>
+        </form>
+      <section class="page-form__comment">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label for="note">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+          <br>
+          <textarea id="note" name="note" rows="9">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <div class="buttons">
+          <input type="submit" value="Отправить форму">
+          </div>
+          <p>* — обязательные поля</p>
+        </form>
+      </section>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="https://htmlacademy.ru">Приложение Пинки</a>
+        </div>
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
