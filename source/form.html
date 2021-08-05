@@ -38,65 +38,59 @@
       </nav>
     </header>
     <main class="page-form">
-      <section class="page-form__item form">
-        <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="page-form__item--intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__surname">
-            <label for="form__surname">ФАМИЛИЯ:</label>
-            <input id="form__surname" type="text" name="" placeholder="Укажите фамилию *">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <form class="page-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form__item full-name">
+        <p class="form--intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="full-name__wrapper">
+            <label class="full-name__label" for="surname">ФАМИЛИЯ:</label>
+            <input class="full-name__input" id="surname" type="text" name="" placeholder="Укажите фамилию *">
           </p>
-          <p class="form__name">
-            <label for="form__name">ИМЯ:</label>
-            <input id="form__name" type="text" name="" placeholder="Введите ваше имя *">
+          <p class="full-name__wrapper">
+            <label class="full-name__label" for="name">ИМЯ:</label>
+            <input class="full-name__input" id="name" type="text" name="" placeholder="Введите ваше имя *">
           </p>
-          <p class="form__patronymic">
-            <label for="form__patronymic">ОТЧЕСТВО:</label>
-            <input id="form__patronymic" type="text" name="" placeholder="Ну и отчество тоже">
+          <p class="full-name__wrapper">
+            <label class="full-name__label" for="patronymic">ОТЧЕСТВО:</label>
+            <input class="full-name__input" id="patronymic" type="text" name="" placeholder="Ну и отчество тоже">
           </p>
-        </form>
-      </section>
-      <section class="page-form__filter">
+      </fieldset>
+      <fieldset class="page-form__filter">
         <h2>Ваши безбашенные достижения в путешествии</h2>
-        <form class="page-form__filter filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter__fieldset">
-            <ul>
-              <li class="filter__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="shark" id="shark" checked>
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
-              </li>
-              <li class="ffilter__checkbox checkbox">
-                <input class="fcheckbox__input" type="checkbox" name="coast" id="coast" checked>
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="coast">Обгорел на пляже</label>
-              </li>
-              <li class="filter__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="Chuck-Norris" id="Chuck-Norris" >
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="Chuck-Norris">Видел Чака Норриса</label>
-              </li>
-              <li class="filter__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="souvenir" id="souvenir" >
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="filter__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="tower" id="tower" checked>
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="tower">Удержал башню</label>
-              </li>
-              <li class="filter__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="hotel" id="hotel" >
-                <span class="checkbox__icon"></span>
-                <label class="checkbox__label" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-      <section class="page-form__placeholder">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li class="filter__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="shark" id="shark" checked>
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
+          </li>
+          <li class="ffilter__checkbox checkbox">
+            <input class="fcheckbox__input" type="checkbox" name="coast" id="coast" checked>
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="coast">Обгорел на пляже</label>
+          </li>
+          <li class="filter__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="Chuck-Norris" id="Chuck-Norris" >
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="Chuck-Norris">Видел Чака Норриса</label>
+          </li>
+          <li class="filter__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="souvenir" id="souvenir" >
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
+          </li>
+          <li class="filter__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="tower" id="tower" checked>
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="tower">Удержал башню</label>
+          </li>
+          <li class="filter__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="hotel" id="hotel" >
+            <span class="checkbox__icon"></span>
+            <label class="checkbox__label" for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="page-form__placeholder">
           <p class="page-form__inform">
             <label for="page-form__number">НОМЕР ТЕЛЕФОНА</label>
             <input id="page-form__number" type="text" name="" placeholder="Номер, пожалуйста">
@@ -105,34 +99,28 @@
             <label for="page-form__adress">АДРЕС ПОЧТЫ</label>
             <input id="page-form__adress" type="text" name="" placeholder="Введите почту *">
           </p>
-        </form>
-      </section>
-      <section class="page-form__question">
+      </fieldset>
+      <fieldset class="page-form__question">
         <h2>С каким приложением путешествовали?</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <input type="radio" name="Pink для iOS" value="Pink для iOS" checked> Pink для iOS
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="Pink на Android" value="Pink на Android"> Pink на Android
-          </label>
-          <br><label>
-            <input type="radio" name="Windows Phone" value="Windows Phone"> Windows Phone
-          </label>
-        </form>
-      <section class="page-form__comment">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <label for="note">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-          <br>
-          <textarea id="note" name="note" rows="9">Можно прям в красках, не стесняясь в выражениях</textarea>
-          <div class="buttons">
-          <input type="submit" value="Отправить форму">
-          </div>
+        <label>
+          <input type="radio" name="Pink для iOS" value="Pink для iOS" checked> Pink для iOS
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="Pink на Android" value="Pink на Android"> Pink на Android
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="Windows Phone" value="Windows Phone"> Windows Phone
+        </label>
+      </fieldset>
+      <fieldset class="page-form__comment">
+        <h2>ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
+          <textarea id="" name="" rows="">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <button type="submit" value="Отправить форму">отправить форму</button>
           <p>* — обязательные поля</p>
-        </form>
-      </section>
-      </section>
+      </fieldset>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
