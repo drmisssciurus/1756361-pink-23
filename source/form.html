@@ -38,10 +38,10 @@
       </nav>
     </header>
     <main class="page-form">
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="page-form--intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="page-form__form form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__item full-name">
-        <p class="form--intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <p class="full-name__wrapper">
             <label class="full-name__label" for="surname">ФАМИЛИЯ:</label>
             <input class="full-name__input" id="surname" type="text" name="" placeholder="Укажите фамилию *">
@@ -55,8 +55,8 @@
             <input class="full-name__input" id="patronymic" type="text" name="" placeholder="Ну и отчество тоже">
           </p>
       </fieldset>
-      <fieldset class="page-form__filter">
-        <h2>Ваши безбашенные достижения в путешествии</h2>
+      <fieldset class="form__item checkbox-list">
+        <legend>Ваши безбашенные достижения в путешествии</legend>
         <ul>
           <li class="filter__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="shark" id="shark" checked>
@@ -90,18 +90,18 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="page-form__placeholder">
+      <fieldset class="form__item user-data">
           <p class="page-form__inform">
-            <label for="page-form__number">НОМЕР ТЕЛЕФОНА</label>
-            <input id="page-form__number" type="text" name="" placeholder="Номер, пожалуйста">
+            <label class="user-data--label" for="number">НОМЕР ТЕЛЕФОНА</label>
+            <input class="user-data--input" id="number" type="text" name="" placeholder="Номер, пожалуйста">
           </p>
           <p class="page-form__inform">
-            <label for="page-form__adress">АДРЕС ПОЧТЫ</label>
-            <input id="page-form__adress" type="text" name="" placeholder="Введите почту *">
+            <label class="user-data--label" for="mail">АДРЕС ПОЧТЫ</label>
+            <input class="user-data--input" id="mail" type="text" name="" placeholder="Введите почту *">
           </p>
       </fieldset>
-      <fieldset class="page-form__question">
-        <h2>С каким приложением путешествовали?</h2>
+      <fieldset class="form__item question">
+        <legend>С каким приложением путешествовали?</legend>
         <label>
           <input type="radio" name="Pink для iOS" value="Pink для iOS" checked> Pink для iOS
         </label>
@@ -114,8 +114,8 @@
           <input type="radio" name="Windows Phone" value="Windows Phone"> Windows Phone
         </label>
       </fieldset>
-      <fieldset class="page-form__comment">
-        <h2>ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
+      <fieldset class="form__item comment">
+        <legend>ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
           <textarea id="" name="" rows="">Можно прям в красках, не стесняясь в выражениях</textarea>
           <button type="submit" value="Отправить форму">отправить форму</button>
           <p>* — обязательные поля</p>
